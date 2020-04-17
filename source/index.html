@@ -4,114 +4,200 @@
   <meta charset="utf-8">
   <title>HTML Academy: Погнали</title>
 </head>
+
 <body>
-<header>
-  <a>
-    <img src="https://via.placeholder.com/150x150" width="100" height="19" alt="Поехали!">
+<header class="page-header">
+  <a class="page-header__logo">
+    <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="100" height="19"
+         alt="Поехали!">
   </a>
-  <nav>
-    <button type="button">Открыть меню</button>
-    <ul>
-      <li><a>О сервисе</a></li>
-      <li><a href="#">Направления</a></li>
-      <li><a href="#">Попутчики</a></li>
+  <nav class="main-nav">
+    <button class="main-nav__toggle" type="button">Открыть меню</button>
+    <ul class="main-nav__list site-list">
+      <li class="site-list__item site-list__item--active"><a>О сервисе</a></li>
+      <li class="site-list__item"><a href="form.html">Попутчики</a></li>
+      <li class="site-list__item"><a href="catalog.html">Направления</a></li>
     </ul>
-    <ul>
-      <li><a>Позвонить нам.</a></li>
-      <li><a>Написать нам.</a></li>
-      <li><a>Авторизация.</a></li>
+    <ul class="main-nav__list user-list">
+      <li class="user-list__item"><a href="#">Позвонить нам.</a></li>
+      <li class="user-list__item"><a href="#">Написать нам.</a></li>
+      <li class="user-list__item"><a href="#">Авторизация.</a></li>
     </ul>
   </nav>
 </header>
+
+
 <main>
-  <section>
-    <div>
-      <h1>В путешествие с крутыми попутчиками!</h1>
-      <img src="https://via.placeholder.com/150x150" width="192" height="255" alt="">
-    </div>
-    <blockquote>
-      <q>Лучшее приложение,
+  <section class="actions">
+    <h1 class="actions__title">В путешествие с крутыми попутчиками!</h1>
+    <img class="actions__image" src="https://via.placeholder.com/150x150" width="192" height="255" alt="">
+    <blockquote class="actions__blockquote">
+      <q class="actions__quote">Лучшее приложение,
         что я видел в жизни!</q>
-      <cite>Мурат Эльтазин главный редактор
+      <cite class="actions__cite">Мурат Эльтазин главный редактор
         газеты «гаджетлайф»</cite>
     </blockquote>
-  </section>
-  <section>
-    <h3>Для достижения цели:</h3>
-    <ol>
-      <li>Выберите
-        направление</li>
-      <li>Изучите идеи
-        путешественников</li>
-      <li>Находите тех,
-        кто похож на вас</li>
-      <li>Путешествуйте
-        вместе!</li>
+    <h3 class="visually-hidden">Для достижения цели:</h3>
+    <ol class="actions__list">
+      <li class="actions__item">Выберите
+        направление
+      </li>
+      <li class="actions__item">Изучите идеи
+        путешественников
+      </li>
+      <li class="actions__item">Находите тех,
+        кто похож на вас
+      </li>
+      <li class="actions__item">Путешествуйте
+        вместе!
+      </li>
     </ol>
   </section>
-  <section>
-    <h2>О сервисе</h2>
-    <p>Любое путешествие веселее
-      с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих. </p>
-    <p>А если найдете кого-то
+
+
+  <section class="service">
+    <h2 class="service__title">О сервисе</h2>
+    <p class="service__text">Любое путешествие веселее
+      с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в
+      чужих. </p>
+    <p class="service__text">А если найдете кого-то
       близкого по духу — скорее
       зовите в совместный трип!</p>
   </section>
-  <section>
-    <h2>Направления</h2>
-    <p>Мы не продаем туры
+
+
+  <section class="destination">
+    <h2 class="destination__title">Направления</h2>
+    <p class="destination__text">Мы не продаем туры
       и ничего не рекламируем.
       Люди сами пишут о странах, куда хотели бы отправиться
       и чем можно там заняться.
     </p>
-    <ul>
-      <li>
-        <img src="https://via.placeholder.com/150x150" width="270" height="110" alt="">
+    <ul class="destination__list list-countries">
+      <li class="list-countries__item">
+        <img class="list-countries__image" src="https://via.placeholder.com/150x150" width="270" height="110" alt="">
         <div>
-          <h3>Таиланд</h3>
-          <p>Джунгли зовут!</p>
+          <h3 class="list-countries__title">Таиланд</h3>
+          <p class="list-countries__text">Джунгли зовут!</p>
         </div>
         <div>
-          <img src="https://via.placeholder.com/150x150" width="11" height="11" alt="Количество просмотров.">
-          <p>18321</p>
-        </div>
-      </li>
-      <li>
-        <img src="https://via.placeholder.com/150x150" width="270" height="110" alt="">
-        <div>
-          <h3>Франция</h3>
-          <p>Трэ бьен, манифик!</p>
-        </div>
-        <div>
-          <img src="https://via.placeholder.com/150x150" width="11" height="11" alt="Количество просмотров.">
-          <p>12518</p>
+          <img class="list-countries__icon" src="https://via.placeholder.com/150x150" width="11" height="11" alt="Количество просмотров.">
+          <p class="list-countries__number">18321</p>
         </div>
       </li>
-      <li>
-        <img src="https://via.placeholder.com/150x150" width="270" height="110" alt="">
+      <li class="list-countries__item">
+        <img class="list-countries__image" src="https://via.placeholder.com/150x150" width="270" height="110" alt="">
         <div>
-          <h3>Чехия</h3>
-          <p>Закоулки старой Европы</p>
+          <h3 class="list-countries__title">Франция</h3>
+          <p class="list-countries__text">Трэ бьен, манифик!</p>
         </div>
         <div>
-          <img src="https://via.placeholder.com/150x150" width="11" height="11" alt="Количество просмотров.">
-          <p>5326</p>
+          <img class="list-countries__icon" src="https://via.placeholder.com/150x150" width="11" height="11" alt="Количество просмотров.">
+          <p class="list-countries__number">12518</p>
+        </div>
+      </li>
+      <li class="list-countries__item">
+        <img class="list-countries__image" src="https://via.placeholder.com/150x150" width="270" height="110" alt="">
+        <div>
+          <h3 class="list-countries__title">Чехия</h3>
+          <p class="list-countries__text">Закоулки старой Европы</p>
+        </div>
+        <div>
+          <img class="list-countries__icon" src="https://via.placeholder.com/150x150" width="11" height="11" alt="Количество просмотров.">
+          <p class="list-countries__number">5326</p>
         </div>
       </li>
     </ul>
-    <a href="#">Показать все</a>
+    <a class="destination__button" href="#">Показать все</a>
   </section>
-  <section>
-    <h2>Попутчики</h2>
-    <P>Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
+
+
+  <section class="companions">
+    <h2 class="companions__title">Попутчики</h2>
+    <P class="companions__text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут
+      для хайкинга.
     </P>
-    <P>Теперь можно легко найти единомышленников!</P>
+    <P class="companions__text">Теперь можно легко найти единомышленников!</P>
     <ul>
-      <li></li>
-      <li></li>
+      <li>
+        <div>
+          <p>99</p>
+          <p>level</p>
+        </div>
+        <div>
+          <h3>Таня Фирсова</h3>
+          <p>#ЗОЖ #ПП #Фитнес #пляж
+            #авокадо #смузи</p>
+          <div>
+            <h4>Возможные способы передвижения:</h4>
+            <ul>
+              <li>Самолётом</li>
+              <li>Автостоп</li>
+              <li>На велосипеде</li>
+              <li>Путишествовать пешком</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p>80</p>
+          <p>level</p>
+        </div>
+        <div>
+          <h3>Петя Демин</h3>
+          <p>#бургер #бар #футбол
+            #концерт #крафт</p>
+          <div>
+            <h4>Возможные способы передвижения:</h4>
+            <ul>
+              <li>Самолётом</li>
+              <li>Автостоп</li>
+              <li>На велосипеде</li>
+              <li>Путишествовать пешком</li>
+            </ul>
+          </div>
+        </div>
+      </li>
     </ul>
     <a href="#">Показать все</a>
   </section>
+
+
+  <section class="offers">
+    <h2>Добавьте свой профиль</h2>
+    <img src="https://via.placeholder.com/150x150" width="99" height="" alt="99">
+    <ol>
+      <li>Базовое размещение
+        Бесплатно
+      </li>
+      <li>Вывод на первых позициях
+        99 руб./мес
+      </li>
+      <li>Кастомный цвет карточки
+        59 руб./мес
+      </li>
+    </ol>
+    <a href="#">Показать тарифы для бизнеса</a>
+  </section>
+
+
+  <footer class="page-footer">
+    <a>
+      <img src="https://via.placeholder.com/150x150" width="100" height="19" alt="Поехали!">
+    </a>
+    <div>
+      <ul>
+        <li><a href="#">Фейсбук</a></li>
+        <li><a href="#">Вконтакте</a></li>
+        <li><a href="#">Инстаграм</a></li>
+      </ul>
+    </div>
+    <a href="#">
+      <p>Разработано</p>
+      <img src="https://via.placeholder.com/150x150" width="27" height="37" alt="Логотип htmlacademy">
+    </a>
+  </footer>
 </main>
 </body>
 </html>
