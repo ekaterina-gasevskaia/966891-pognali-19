@@ -4,21 +4,20 @@
   <meta charset="utf-8">
   <title>HTML Academy: Погнали</title>
 </head>
-
 <body>
-<header class="page-header">
-  <a class="page-header__logo">
-    <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="100" height="19"
+<header class="header">
+  <a class="header__logo">
+    <img class="header__logo-image" src="https://via.placeholder.com/150x150" width="100" height="19"
          alt="Поехали!">
   </a>
-  <nav class="main-nav">
-    <button class="main-nav__toggle" type="button">Открыть меню</button>
-    <ul class="main-nav__list site-list">
+  <nav class="nav">
+    <button class="nav__toggle" type="button">Открыть меню</button>
+    <ul class="nav__list site-list">
       <li class="site-list__item site-list__item--active"><a>О сервисе</a></li>
       <li class="site-list__item"><a href="form.html">Попутчики</a></li>
       <li class="site-list__item"><a href="catalog.html">Направления</a></li>
     </ul>
-    <ul class="main-nav__list user-list">
+    <ul class="nav__list user-list">
       <li class="user-list__item"><a href="#">Позвонить нам.</a></li>
       <li class="user-list__item"><a href="#">Написать нам.</a></li>
       <li class="user-list__item"><a href="#">Авторизация.</a></li>
@@ -39,17 +38,13 @@
     </blockquote>
     <h3 class="visually-hidden">Для достижения цели:</h3>
     <ol class="actions__list">
-      <li class="actions__item">Выберите
-        направление
+      <li class="actions__item">Выберите направление
       </li>
-      <li class="actions__item">Изучите идеи
-        путешественников
+      <li class="actions__item">Изучите идеи путешественников
       </li>
-      <li class="actions__item">Находите тех,
-        кто похож на вас
+      <li class="actions__item">Находите тех, кто похож на вас
       </li>
-      <li class="actions__item">Путешествуйте
-        вместе!
+      <li class="actions__item">Путешествуйте вместе!
       </li>
     </ol>
   </section>
@@ -73,38 +68,41 @@
       Люди сами пишут о странах, куда хотели бы отправиться
       и чем можно там заняться.
     </p>
-    <ul class="destination__list list-countries">
-      <li class="list-countries__item">
-        <img class="list-countries__image" src="https://via.placeholder.com/150x150" width="270" height="110" alt="">
+    <ul class="destination__list countries">
+      <li class="destination__item">
+        <img class="countries__image" src="https://via.placeholder.com/150x150" width="270" height="110" alt="">
         <div>
-          <h3 class="list-countries__title">Таиланд</h3>
-          <p class="list-countries__text">Джунгли зовут!</p>
+          <h3 class="countries__title">Таиланд</h3>
+          <p class="countries__text">Джунгли зовут!</p>
         </div>
         <div>
-          <img class="list-countries__icon" src="https://via.placeholder.com/150x150" width="11" height="11" alt="Количество просмотров.">
-          <p class="list-countries__number">18321</p>
-        </div>
-      </li>
-      <li class="list-countries__item">
-        <img class="list-countries__image" src="https://via.placeholder.com/150x150" width="270" height="110" alt="">
-        <div>
-          <h3 class="list-countries__title">Франция</h3>
-          <p class="list-countries__text">Трэ бьен, манифик!</p>
-        </div>
-        <div>
-          <img class="list-countries__icon" src="https://via.placeholder.com/150x150" width="11" height="11" alt="Количество просмотров.">
-          <p class="list-countries__number">12518</p>
+          <img class="countries__icon" src="https://via.placeholder.com/150x150" width="11" height="11"
+               alt="Количество просмотров.">
+          <p class="countries__number">18321</p>
         </div>
       </li>
-      <li class="list-countries__item">
-        <img class="list-countries__image" src="https://via.placeholder.com/150x150" width="270" height="110" alt="">
+      <li class="destination__item">
+        <img class="countries__image" src="https://via.placeholder.com/150x150" width="270" height="110" alt="">
         <div>
-          <h3 class="list-countries__title">Чехия</h3>
-          <p class="list-countries__text">Закоулки старой Европы</p>
+          <h3 class="countries__title">Франция</h3>
+          <p class="countries__text">Трэ бьен, манифик!</p>
         </div>
         <div>
-          <img class="list-countries__icon" src="https://via.placeholder.com/150x150" width="11" height="11" alt="Количество просмотров.">
-          <p class="list-countries__number">5326</p>
+          <img class="countries__icon" src="https://via.placeholder.com/150x150" width="11" height="11"
+               alt="Количество просмотров.">
+          <p class="countries__number">12518</p>
+        </div>
+      </li>
+      <li class="destination__item">
+        <img class="countries__image" src="https://via.placeholder.com/150x150" width="270" height="110" alt="">
+        <div>
+          <h3 class="countries__title">Чехия</h3>
+          <p class="countries_text">Закоулки старой Европы</p>
+        </div>
+        <div>
+          <img class="countries__icon" src="https://via.placeholder.com/150x150" width="11" height="11"
+               alt="Количество просмотров.">
+          <p class="countries__number">5326</p>
         </div>
       </li>
     </ul>
@@ -114,88 +112,91 @@
 
   <section class="companions">
     <h2 class="companions__title">Попутчики</h2>
-    <P class="companions__text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут
+    <P class="companions__text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и
+      коктейль, а другому маршрут
       для хайкинга.
     </P>
     <P class="companions__text">Теперь можно легко найти единомышленников!</P>
-    <ul>
-      <li>
-        <div>
-          <p>99</p>
-          <p>level</p>
+    <ul class="companions__list companions-preview">
+
+      <li class="companions-preview__item">
+        <div class="companions-preview__level-wrapper">
+          <p class="companions-preview__number-level">99</p>
+          <p class="companions-preview__text-level">level</p>
         </div>
-        <div>
-          <h3>Таня Фирсова</h3>
-          <p>#ЗОЖ #ПП #Фитнес #пляж
+        <div class="companions-preview__name-wrapper">
+          <h3 class="companions-preview__name">Таня Фирсова</h3>
+          <p class="companions-preview__hashtag">#ЗОЖ #ПП #Фитнес #пляж
             #авокадо #смузи</p>
-          <div>
-            <h4>Возможные способы передвижения:</h4>
-            <ul>
-              <li>Самолётом</li>
-              <li>Автостоп</li>
-              <li>На велосипеде</li>
-              <li>Путишествовать пешком</li>
-            </ul>
-          </div>
+        </div>
+        <div class="companions-preview__transport-wrapper">
+          <h4 class="visually-hidden">Возможные способы передвижения:</h4>
+          <ul class="companions-preview__transport-list transport">
+            <li class="transport__item">Самолётом</li>
+            <li class="transport__item">Автостоп</li>
+            <li class="transport__item">На велосипеде</li>
+            <li class="transport__item">Путишествовать пешком</li>
+          </ul>
         </div>
       </li>
-      <li>
-        <div>
-          <p>80</p>
-          <p>level</p>
+
+      <li class="companions-preview__item">
+        <div class="companions-preview__level-wrapper">
+          <p class="companions-preview__number-level">80</p>
+          <p class="companions-preview__text-level">level</p>
         </div>
-        <div>
-          <h3>Петя Демин</h3>
-          <p>#бургер #бар #футбол
+        <div class="companions-preview__name-wrapper">
+          <h3 class="companions-preview__name">Петя Демин</h3>
+          <p class="companions-preview__hashtag">#бургер #бар #футбол
             #концерт #крафт</p>
-          <div>
-            <h4>Возможные способы передвижения:</h4>
-            <ul>
-              <li>Самолётом</li>
-              <li>Автостоп</li>
-              <li>На велосипеде</li>
-              <li>Путишествовать пешком</li>
-            </ul>
-          </div>
+        </div>
+        <div class="companions-preview__transport-wrapper">
+          <h4 class="visually-hidden">Возможные способы передвижения:</h4>
+          <ul class="companions-preview__transport-list transport">
+            <li class="transport__item">Самолётом</li>
+            <li class="transport__item">Автостоп</li>
+            <li class="transport__item">На велосипеде</li>
+            <li class="transport__item">Путишествовать пешком</li>
+          </ul>
         </div>
       </li>
     </ul>
-    <a href="#">Показать все</a>
+    <a class="companions__button" href="#">Показать все</a>
   </section>
 
 
   <section class="offers">
-    <h2>Добавьте свой профиль</h2>
-    <img src="https://via.placeholder.com/150x150" width="99" height="" alt="99">
-    <ol>
-      <li>Базовое размещение
+    <h2 class="offers__title">Добавьте свой профиль</h2>
+    <img class="offers" src="https://via.placeholder.com/150x150" width="99" height="" alt="99">
+    <ol class="offers__list">
+      <li class="offers__item">Базовое размещение
         Бесплатно
       </li>
-      <li>Вывод на первых позициях
+      <li class="offers__item">Вывод на первых позициях
         99 руб./мес
       </li>
-      <li>Кастомный цвет карточки
+      <li class="offers__item">Кастомный цвет карточки
         59 руб./мес
       </li>
     </ol>
-    <a href="#">Показать тарифы для бизнеса</a>
+    <a class="offers__button" href="#">Показать тарифы для бизнеса</a>
   </section>
 
 
-  <footer class="page-footer">
-    <a>
-      <img src="https://via.placeholder.com/150x150" width="100" height="19" alt="Поехали!">
+  <footer class="footer">
+    <a class="footer__logo">
+      <img class="footer__logo-image" src="https://via.placeholder.com/150x150" width="100" height="19" alt="Поехали!">
     </a>
-    <div>
-      <ul>
-        <li><a href="#">Фейсбук</a></li>
-        <li><a href="#">Вконтакте</a></li>
-        <li><a href="#">Инстаграм</a></li>
+    <div class="footer__social social">
+      <ul class="social__list">
+        <li class="social__item"><a href="#">Фейсбук</a></li>
+        <li class="social__item"><a href="#">Вконтакте</a></li>
+        <li class="social__item"><a href="#">Инстаграм</a></li>
       </ul>
     </div>
-    <a href="#">
-      <p>Разработано</p>
-      <img src="https://via.placeholder.com/150x150" width="27" height="37" alt="Логотип htmlacademy">
+    <a class="footer__copyright copyright" href="#">
+      <p class="copyright__text">Разработано</p>
+      <img class="copyright__image" src="https://via.placeholder.com/150x150" width="27" height="37" alt="Логотип htmlacademy">
     </a>
   </footer>
 </main>

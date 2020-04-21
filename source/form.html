@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Погнали</title>
+  <meta charset="utf-8">
+  <title>HTML Academy: Погнали</title>
 </head>
 <body>
-<header class="page-header">
-  <a class="page-header__logo">
-    <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="100" height="19" alt="Поехали!">
+<header class="header">
+  <a class="header__logo">
+    <img class="header__logo-image" src="https://via.placeholder.com/150x150" width="100" height="19" alt="Поехали!">
   </a>
-  <nav class="main-nav">
-    <button class="main-nav__toggle" type="button">Открыть меню</button>
-    <ul class="main-nav__list site-list">
+  <nav class="nav">
+    <button class="nav__toggle" type="button">Открыть меню</button>
+    <ul class="nav__list site-list">
       <li class="site-list__item"><a href="index.html">О сервисе</a></li>
       <li class="site-list__item site-list__item--active"><a>Попутчики</a></li>
       <li class="site-list__item"><a href="catalog.html">Направления</a></li>
     </ul>
-    <ul class="main-nav__list user-list">
+    <ul class="nav__list user-list">
       <li class="user-list__item"><a href="#">Позвонить нам.</a></li>
       <li class="user-list__item"><a href="#">Написать нам.</a></li>
       <li class="user-list__item"><a href="#">Авторизация.</a></li>
@@ -25,159 +25,156 @@
 </header>
 
 
-<section>
-  <article>
-    <h2>Таня Фирсова</h2>
-    <div></div>
-    <div>
-     <h4>Количество лайков:</h4>
-    <span>1,5 m</span>
+<section class="companion-cards">
+  <article class="companion-cards__companion-information companion-information">
+    <h2 class="companion-information__name">Таня Фирсова</h2>
+    <div class="companion-information__avatar"></div>
+    <div class="companion-information__likes-wrapper">
+      <h4 class="visually-hidden">Количество лайков:</h4>
+      <span class="companion-information__likes">1,5 m</span>
     </div>
-    <span>#ЗОЖ #ПП #Фитнес #пляж
+    <span class="companion-information__hashtag">#ЗОЖ #ПП #Фитнес #пляж
       #авокадо #смузи</span>
-    <div>
-      <h4>хочет посетить:</h4>
-      <ul>
-        <li>Шри-ланка</li>
-        <li>Таиланд</li>
-        <li>Сейшелы</li>
+    <div class="companion-information__desired-countries desired-countries">
+      <h4 class="desired-countries__title">хочет посетить:</h4>
+      <ul class="desired-countries__list">
+        <li class="desired-countries__item">Шри-ланка</li>
+        <li class="desired-countries__item">Таиланд</li>
+        <li class="desired-countries__item">Сейшелы</li>
       </ul>
     </div>
-    <div>
-      <h4>транспорт:</h4>
-      <ul>
-        <li>Самолёт</li>
-        <li>Машина</li>
-        <li>Велолсипед</li>
-        <li>Путишествовать пешком</li>
+    <div class="companion-information__possible-transport possible-transport">
+      <h4 class="possible-transport__title">транспорт:</h4>
+      <ul class="companion-information__list">
+        <li class="possible-transport__title">Самолёт</li>
+        <li class="possible-transport__title">Машина</li>
+        <li class="possible-transport__title">Велолсипед</li>
+        <li class="possible-transport__title">Путишествовать пешком</li>
       </ul>
     </div>
-    <div>
-      <h4>левел:</h4>
-      <div>99</div>
+    <div class="companion-information__level-wrapper">
+      <h4 class="companion-information__text-level">левел:</h4>
+      <div class="companion-information__number-level">99</div>
     </div>
-    <button type="submit">Позвать!</button>
+    <button class="companion-information__button" type="submit">Позвать!</button>
   </article>
 
-  <article>
-    <h2>Петя Демин</h2>
-    <div></div>
-    <div>
-      <h4>Количество лайков:</h4>
-      <span>1500</span>
+  <article class="companion-cards__companion-information companion-information">
+    <h2 class="companion-information__name">Петя Демин</h2>
+    <div class="companion-information__avatar"></div>
+    <div class="companion-information__likes-wrapper">
+      <h4 class="visually-hidden">Количество лайков:</h4>
+      <span class="companion-information__likes">1500</span>
     </div>
-    <span>#бургер #бар #футбол
+    <span class="companion-information__hashtag">#бургер #бар #футбол
       #концерт #крафт</span>
-    <div>
-      <h4>хочет посетить:</h4>
-      <ul>
-        <li>Бельгия</li>
-        <li>Чехия</li>
+    <div class="companion-information__desired-countries desired-countries">
+      <h4 class="desired-countries__title">хочет посетить:</h4>
+      <ul class="desired-countries__list">
+        <li class="desired-countries__item">Бельгия</li>
+        <li class="desired-countries__item">Чехия</li>
       </ul>
     </div>
-    <div>
-      <h4>транспорт:</h4>
-      <ul>
-        <li>Самолёт</li>
-        <li>Машина</li>
-        <li>Велолсипед</li>
-        <li>Путишествовать пешком</li>
+    <div class="companion-information__possible-transport possible-transport">
+      <h4 class="possible-transport__title">транспорт:</h4>
+      <ul class="companion-information__list">
+        <li class="possible-transport__title">Самолёт</li>
+        <li class="possible-transport__title">Машина</li>
+        <li class="possible-transport__title">Велолсипед</li>
+        <li class="possible-transport__title">Путишествовать пешком</li>
       </ul>
     </div>
-    <div>
-      <h4>левел:</h4>
-      <div>80</div>
+    <div class="companion-information__level-wrapper">
+      <h4 class="companion-information__text-level">левел:</h4>
+      <div class="companion-information__number-level">80</div>
     </div>
-    <button type="submit">Позвать!</button>
+    <button class="companion-information__button" type="submit">Позвать!</button>
   </article>
 
-  <article>
-    <h2>Марк Смолов</h2>
-    <div></div>
-    <div>
-      <h4>Количество лайков:</h4>
-      <span>170</span>
+  <article class="companion-cards__companion-information companion-information">
+    <h2 class="companion-information__name">Марк Смолов</h2>
+    <div class="companion-information__avatar"></div>
+    <div class="companion-information__likes-wrapper">
+      <h4 class="visually-hidden">Количество лайков:</h4>
+      <span class="companion-information__likes">170</span>
     </div>
-    <span>#рэп #тату #хайпбист
+    <span class="companion-information__hashtag">#рэп #тату #хайпбист
       #кроссовки #суприм</span>
-    <div>
-      <h4>хочет посетить:</h4>
-      <ul>
-        <li>США</li>
-        <li>Австралия</li>
-        <li>Доминика</li>
+    <div class="companion-information__desired-countries desired-countries">
+      <h4 class="desired-countries__title">хочет посетить:</h4>
+      <ul class="desired-countries__list">
+        <li class="desired-countries__item">США</li>
+        <li class="desired-countries__item">Австралия</li>
+        <li class="desired-countries__item">Доминика</li>
       </ul>
     </div>
-    <div>
-      <h4>транспорт:</h4>
-      <ul>
-        <li>Самолёт</li>
-        <li>Машина</li>
-        <li>Велолсипед</li>
-        <li>Путишествовать пешком</li>
+    <div class="companion-information__possible-transport possible-transport">
+      <h4 class="possible-transport__title">транспорт:</h4>
+      <ul class="companion-information__list">
+        <li class="possible-transport__title">Самолёт</li>
+        <li class="possible-transport__title">Машина</li>
+        <li class="possible-transport__title">Велолсипед</li>
+        <li class="possible-transport__title">Путишествовать пешком</li>
       </ul>
     </div>
-    <div>
-      <h4>левел:</h4>
-      <div>25</div>
+    <div class="companion-information__level-wrapper">
+      <h4 class="companion-information__text-level">левел:</h4>
+      <div class="companion-information__number-level">25</div>
     </div>
-    <button type="submit">Позвать!</button>
+    <button class="companion-information__button" type="submit">Позвать!</button>
   </article>
 
-  <article>
-    <h2>Лариса Роговая</h2>
-    <div></div>
-    <div>
-      <h4>Количество лайков:</h4>
-      <span>23</span>
+  <article class="companion-cards__companion-information companion-information">
+    <h2 class="companion-information__name">Лариса Роговая</h2>
+    <div class="companion-information__avatar"></div>
+    <div class="companion-information__likes-wrapper">
+      <h4 class="visually-hidden">Количество лайков:</h4>
+      <span class="companion-information__likes">23</span>
     </div>
-    <span>#образование #карьера
+    <span class="companion-information__hashtag">#образование #карьера
       #учеба #линкедин
     </span>
-    <div>
-      <h4>хочет посетить:</h4>
-      <ul>
-        <li>Великобритания</li>
-        <li>Германия</li>
+    <div class="companion-information__desired-countries desired-countries">
+      <h4 class="desired-countries__title">хочет посетить:</h4>
+      <ul class="desired-countries__list">
+        <li class="desired-countries__item">Великобритания</li>
+        <li class="desired-countries__item">Германия</li>
       </ul>
     </div>
-    <div>
-      <h4>транспорт:</h4>
-      <ul>
-        <li>Самолёт</li>
-        <li>Машина</li>
-        <li>Велолсипед</li>
-        <li>Путишествовать пешком</li>
+    <div class="companion-information__possible-transport possible-transport">
+      <h4 class="possible-transport__title">транспорт:</h4>
+      <ul class="companion-information__list">
+        <li class="possible-transport__title">Самолёт</li>
+        <li class="possible-transport__title">Машина</li>
+        <li class="possible-transport__title">Велолсипед</li>
+        <li class="possible-transport__title">Путишествовать пешком</li>
       </ul>
     </div>
-    <div>
-      <h4>левел:</h4>
-      <div></div>
+    <div class="companion-information__level-wrapper">
+      <h4 class="companion-information__text-level">левел:</h4>
+      <div class="companion-information__number-level">50</div>
     </div>
-    <button type="submit">Позвать!</button>
+    <button class="companion-information__button" type="submit">Позвать!</button>
   </article>
+  <a class="companion-cards__link" href="#">Показать еще</a>
+  <button class="companion-cards__button"></button>
+  <button class="companion-cards__button"></button>
 </section>
 
-<a href="#">Показать еще</a>
-
-<button></button>
-<button></button>
-
-
-<footer>
-  <a>
-    <img src="https://via.placeholder.com/150x150" width="100" height="19" alt="Поехали!">
+<footer class="footer">
+  <a class="footer__logo">
+    <img class="footer__logo-image" src="https://via.placeholder.com/150x150" width="100" height="19" alt="Поехали!">
   </a>
-  <div>
-    <ul>
-      <li><a href="#">Фейсбук</a></li>
-      <li><a href="#">Вконтакте</a></li>
-      <li><a href="#">Инстаграм</a></li>
+  <div class="footer__social social">
+    <ul class="social__list">
+      <li class="social__item"><a href="#">Фейсбук</a></li>
+      <li class="social__item"><a href="#">Вконтакте</a></li>
+      <li class="social__item"><a href="#">Инстаграм</a></li>
     </ul>
   </div>
-  <a href="#">
-    <p>Разработано</p>
-    <img src="https://via.placeholder.com/150x150" width="27" height="37" alt="Логотип htmlacademy">
+  <a class="footer__copyright copyright" href="#">
+    <p class="copyright__text">Разработано</p>
+    <img class="copyright__image" src="https://via.placeholder.com/150x150" width="27" height="37" alt="Логотип htmlacademy">
   </a>
 </footer>
 </body>
