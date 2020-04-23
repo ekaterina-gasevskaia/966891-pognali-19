@@ -1,12 +1,200 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Погнали</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Погнали</title>
+</head>
+<body>
+<header class="header">
+  <a class="header__logo">
+    <img class="header__logo-image" src="https://via.placeholder.com/150x150" width="100" height="19" alt="Поехали!">
+  </a>
+  <nav class="nav">
+    <button class="nav__toggle" type="button">Открыть меню</button>
+    <ul class="nav__list site-list">
+      <li class="site-list__item site-list__item--active"><a>О сервисе</a></li>
+      <li class="site-list__item"><a href="form.html">Попутчики</a></li>
+      <li class="site-list__item"><a href="catalog.html">Направления</a></li>
+    </ul>
+    <ul class="nav__list user-list">
+      <li class="user-list__item"><a href="#">Позвонить нам.</a></li>
+      <li class="user-list__item"><a href="#">Написать нам.</a></li>
+      <li class="user-list__item"><a href="#">Авторизация.</a></li>
+    </ul>
+  </nav>
+</header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
 
-  </body>
+<main>
+  <section class="actions">
+    <h1 class="actions__title">В путешествие с крутыми попутчиками!</h1>
+    <img class="actions__image" src="https://via.placeholder.com/150x150" width="192" height="255" alt="">
+    <blockquote class="actions__blockquote">
+      <q class="actions__quote">Лучшее приложение,
+        что я видел в жизни!</q>
+      <cite class="actions__cite">Мурат Эльтазин главный редактор
+        газеты «гаджетлайф»</cite>
+    </blockquote>
+    <h2 class="visually-hidden">Для достижения цели:</h2>
+    <ol class="actions__list">
+      <li class="actions__item">Выберите направление
+      </li>
+      <li class="actions__item">Изучите идеи путешественников
+      </li>
+      <li class="actions__item">Находите тех, кто похож на вас
+      </li>
+      <li class="actions__item">Путешествуйте вместе!
+      </li>
+    </ol>
+  </section>
+
+
+  <section class="service">
+    <h2 class="service__title">О сервисе</h2>
+    <p class="service__text">Любое путешествие веселее
+      с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в
+      чужих. </p>
+    <p class="service__text">А если найдете кого-то
+      близкого по духу — скорее
+      зовите в совместный трип!</p>
+  </section>
+
+
+  <section class="destination">
+    <h2 class="destination__title">Направления</h2>
+    <p class="destination__text">Мы не продаем туры
+      и ничего не рекламируем.
+      Люди сами пишут о странах, куда хотели бы отправиться
+      и чем можно там заняться.
+    </p>
+    <ul class="destination__list countries">
+      <li class="destination__item">
+        <img class="countries__image" src="https://via.placeholder.com/150x150" width="270" height="110" alt="">
+        <div>
+          <h3 class="countries__title">Таиланд</h3>
+          <p class="countries__text">Джунгли зовут!</p>
+        </div>
+        <div>
+          <img class="countries__icon" src="https://via.placeholder.com/150x150" width="11" height="11" alt="Количество просмотров.">
+          <p class="countries__number">18321</p>
+        </div>
+      </li>
+      <li class="destination__item">
+        <img class="countries__image" src="https://via.placeholder.com/150x150" width="270" height="110" alt="">
+        <div>
+          <h3 class="countries__title">Франция</h3>
+          <p class="countries__text">Трэ бьен, манифик!</p>
+        </div>
+        <div>
+          <img class="countries__icon" src="https://via.placeholder.com/150x150" width="11" height="11" alt="Количество просмотров.">
+          <p class="countries__number">12518</p>
+        </div>
+      </li>
+      <li class="destination__item">
+        <img class="countries__image" src="https://via.placeholder.com/150x150" width="270" height="110" alt="">
+        <div>
+          <h3 class="countries__title">Чехия</h3>
+          <p class="countries_text">Закоулки старой Европы</p>
+        </div>
+        <div>
+          <img class="countries__icon" src="https://via.placeholder.com/150x150" width="11" height="11" alt="Количество просмотров.">
+          <p class="countries__number">5326</p>
+        </div>
+      </li>
+    </ul>
+    <a class="destination__button" href="#">Показать все</a>
+  </section>
+
+
+  <section class="companions">
+    <h2 class="companions__title">Попутчики</h2>
+    <P class="companions__text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и
+      коктейль, а другому маршрут
+      для хайкинга.
+    </P>
+    <P class="companions__text">Теперь можно легко найти единомышленников!</P>
+    <ul class="companions__list companions-preview">
+
+      <li class="companions-preview__item">
+        <div class="companions-preview__level-wrapper">
+          <p class="companions-preview__number-level">99</p>
+          <p class="companions-preview__text-level">level</p>
+        </div>
+        <div class="companions-preview__name-wrapper">
+          <h3 class="companions-preview__name">Таня Фирсова</h3>
+          <p class="companions-preview__hashtag">#ЗОЖ #ПП #Фитнес #пляж
+            #авокадо #смузи</p>
+        </div>
+        <div class="companions-preview__transport-wrapper">
+          <b class="visually-hidden">Возможные способы передвижения:</b>
+          <ul class="companions-preview__transport-list transport">
+            <li class="transport__item">Самолётом</li>
+            <li class="transport__item">Автостоп</li>
+            <li class="transport__item">На велосипеде</li>
+            <li class="transport__item">Путишествовать пешком</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="companions-preview__item">
+        <div class="companions-preview__level-wrapper">
+          <p class="companions-preview__number-level">80</p>
+          <p class="companions-preview__text-level">level</p>
+        </div>
+        <div class="companions-preview__name-wrapper">
+          <h3 class="companions-preview__name">Петя Демин</h3>
+          <p class="companions-preview__hashtag">#бургер #бар #футбол
+            #концерт #крафт</p>
+        </div>
+        <div class="companions-preview__transport-wrapper">
+          <b class="visually-hidden">Возможные способы передвижения:</b>
+          <ul class="companions-preview__transport-list transport">
+            <li class="transport__item">Самолётом</li>
+            <li class="transport__item">Автостоп</li>
+            <li class="transport__item">На велосипеде</li>
+            <li class="transport__item">Путишествовать пешком</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+    <a class="companions__button" href="#">Показать все</a>
+  </section>
+
+
+  <section class="offers">
+    <h2 class="offers__title">Добавьте свой профиль</h2>
+    <img class="offers" src="https://via.placeholder.com/150x150" width="99" height="" alt="99">
+    <ol class="offers__list">
+      <li class="offers__item">Базовое размещение
+        Бесплатно
+      </li>
+      <li class="offers__item">Вывод на первых позициях
+        99 руб./мес
+      </li>
+      <li class="offers__item">Кастомный цвет карточки
+        59 руб./мес
+      </li>
+    </ol>
+    <a class="offers__button" href="#">Показать тарифы для бизнеса</a>
+  </section>
+
+
+  <footer class="footer">
+    <a class="footer__logo">
+      <img class="footer__logo-image" src="https://via.placeholder.com/150x150" width="100" height="19" alt="Поехали!">
+    </a>
+    <div class="footer__social social">
+      <ul class="social__list">
+        <li class="social__item"><a href="#">Фейсбук</a></li>
+        <li class="social__item"><a href="#">Вконтакте</a></li>
+        <li class="social__item"><a href="#">Инстаграм</a></li>
+      </ul>
+    </div>
+    <a class="footer__copyright copyright" href="#">
+      <p class="copyright__text">Разработано</p>
+      <img class="copyright__image" src="https://via.placeholder.com/150x150" width="27" height="37" alt="Логотип htmlacademy">
+    </a>
+  </footer>
+</main>
+</body>
 </html>
