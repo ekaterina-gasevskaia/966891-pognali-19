@@ -24,6 +24,93 @@
   </nav>
 </header>
 
+<section class="user-info">
+ <div class="user-info__level-wrapper">
+   <span class="user-info__level-number">80</span>
+   <span class="user-info__level-text">level</span>
+ </div>
+  <div class="user-info__avatar">
+    <img class="user-info__avatar-image" src="https://via.placeholder.com/150x150" width="99" height="100" alt="Ваша фотография.">
+  </div>
+  <button class="user-info__button" type="button">Сменить фото</button>
+  <div class="user-info__hashtag user-hashtag">
+    <b class="user-hashtag__title">Тэги</b>
+    <p class="user-hashtag__text">#бургер #бар #футбол #концерт #крафт</p>
+  </div>
+  <div class="user-info__transport user-transport">
+    <b class="user-transport__title">Транспорт</b>
+    <ul class="user-transport__list">
+      <li class="user-transport__item">Авиаперелет</li>
+      <li class="user-transport__item">Автотранспорт</li>
+      <li class="user-transport__item">Велосипед</li>
+      <li class="user-transport__item">Пешком</li>
+    </ul>
+  </div>
+</section>
+
+<section class="desired-travel">
+  <h2 class="desired-travel__title">Мои планы:</h2>
+  <ol class="desired-travel__list">
+    <li class="desired-travel__item">
+      <b class="desired-travel__country">Франция, Италия</b>
+      <span class="desired-travel__companions">3 попутчика</span>
+      <span class="desired-travel__data">26 мар — 29 мар</span>
+      <button class="desired-travel__button" type="button">Изменить</button>
+    </li>
+    <li class="desired-travel___item">
+      <b class="desired-travel__country">Таиланд, Индонезия</b>
+      <span class="desired-travel__companions">1 попутчик</span>
+      <span class="desired-travel__data">1 июл — 15 июл</span>
+      <button class="desired-travel__data" type="button">Изменить</button>
+    </li>
+  </ol>
+</section>
+
+<section class="planning">
+  <h2 class="planning__title">Добавить план:</h2>
+  <form class="planning__form" action="https://echo.htmlacademy.ru" method="get">
+    <fieldset class="planning__data intended-date">
+      <legend class="intended-date__title">Шаг 1. Даты пребывания</legend>
+      <p class="intended-date__text">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+      <div class="intended-date__companions">
+        <label class="intended-date__companions-label" for="number-of-companions">Ищу попутчиков:</label>
+        <input class="intended-date__companions-input" type="number" name="number-of-companions" id="number-of-companions">
+      </div>
+      <div class="intended-date__duration">
+        <label class="intended-date__duration-label" for="duration">Длительность:</label>
+        <input class="intended-date__duration-input" type="number" name="duration" id="duration">
+      </div>
+      <div class="intended-date__child-presence">
+        <input class="intended-date__child-presence-input" type="checkbox" name="child-presence" id="child-presence">
+        <label class="intended-date__child-presence-label" for="child-presence">Можно с детьми</label>
+      </div>
+      <div class="intended-date__calendar">
+        <input class="intended-date__calendar-input" type="date">
+      </div>
+      <button class="intended-date__next-button" type="button">Следующий шаг</button>
+    </fieldset>
+
+    <fieldset class="planning__route route">
+      <legend class="route__title">Шаг 2. Маршрут</legend>
+      <p class="route__text">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
+      <input class="route__completed" type="text">
+      <input class="route__completed" type="text">
+      <input class="route__blank" type="text" placeholder="Выберите страну">
+      <button class="route__add" type="button">Добавить страну</button>
+      <button class="route__next-button" type="button">Следующий шаг</button>
+      <button class="route__back-button" type="button">На шаг назад</button>
+    </fieldset>
+
+    <fieldset class="planning__amusements amusements">
+      <legend class="amusements__title">Шаг 3. Развлечения</legend>
+      <p class="amusements__text">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+      <textarea class="amusements__requests" rows="5" cols="15" name="requests"></textarea>
+      <textarea class="amusements__requests" rows="5" cols="15" name="requests"></textarea>
+      <button class="amusements__back-button" type="button">На шаг назад</button>
+    </fieldset>
+    <button class="planning__button" type="submit">Отправить</button>
+  </form>
+</section>
 
 <footer class="footer">
   <a class="footer__logo">
