@@ -1,13 +1,18 @@
-.background() {
-  color: @color-text-white;
+.bg-dark-blue-grey-color-white() {
+  color: @color-white;
 
   background-color: @color-dark-blue-grey;
 }
 
-.button() {
+.button-index-page() {
+  width: 270px;
+  height: 62px;
+
   font-family: inherit;
+  font-size: 18px;
+  line-height: 62px;
   text-align: center;
-  color: @color-text-dark-slate-blue;
+  color: @color-dark-slate-blue;
 
   background-color: @color-light-gold;
   border: none;
@@ -16,15 +21,45 @@
   cursor: pointer;
 }
 
-.border-radius() {
+.border-radius-bottom-20px() {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
 
-.title-style() {
+.border-radius-top-20px() {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.title(@color) {
   margin: 0;
 
   font-size: 24px;
   line-height: 24px;
-  color: @color-text-mango;
+  color: @color;
 }
+
+.title-dark-slate-blue() {
+  margin: 0;
+
+  font-size: 20px;
+  line-height: 20px;
+  color: @color-dark-slate-blue;
+}
+
+
+.button-rounded(@width, @bg-color) {
+  width: @width;
+  height: 40px;
+
+  font-family: inherit;
+  font-size: 17px;
+  text-transform: uppercase;
+  line-height: 40px;
+  color: @color-dark-two;
+
+  border: none;
+  border-radius: 20px;
+  background-color: @bg-color;
+}
+
