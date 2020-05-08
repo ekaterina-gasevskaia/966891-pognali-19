@@ -5,13 +5,15 @@
 }
 
 .button-index-page() {
+  box-sizing: border-box;
   width: 270px;
   height: 62px;
+  padding-left: 24px;
 
   font-family: inherit;
   font-size: 18px;
   line-height: 62px;
-  text-align: center;
+  text-align: left;
   color: @color-dark-slate-blue;
 
   background-color: @color-light-gold;
@@ -19,6 +21,20 @@
   border-radius: 10px;
 
   cursor: pointer;
+}
+
+.button-index-page-before() {
+  content: "";
+  position: absolute;
+  top: 23px;
+  right: 23px;
+
+
+  width: 10px;
+  height: 14px;
+
+  background-image: url("../img/triangle-arrow-right.svg");
+  background-repeat: no-repeat;
 }
 
 .border-radius-bottom-20px() {

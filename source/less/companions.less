@@ -1,6 +1,20 @@
 .companions {
+  position: relative;
+  z-index: 4;
+
   .bg-dark-blue-grey-color-white;
   .border-radius-bottom-20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1370px;
+  padding-top: 120px;
+  margin-top: -50px ;
+
+  background-image: url("../img/smolov-back-desktop@1x.png"), url("../img/rogovaya-back-mobile@1x.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 150px 90px, -10px 345px;
 }
 
 .companions__title {
@@ -8,7 +22,174 @@
   width: 220px;
 }
 
+.companions__text {
+  width: 220px;
+}
+
+.companions__list {
+  margin: 0 0 20px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.companions-preview__item {
+  width: 270px;
+  margin-bottom: 10px;
+}
+
+.companions-preview__wrapper-image {
+  position: relative;
+
+  width: 270px;
+  height: 270px;
+}
+
+.companions-preview__image {
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.companions-preview__level-wrapper {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  border: 3px solid @color-mango;
+}
+
+.companions-preview__wrapper-info {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 270px;
+  height: 157px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 27px 0 20px;
+
+  color: #444444;
+
+  background-color: @color-white;
+}
+
+.companions-preview__name {
+  width: 200px;
+  margin: auto;
+
+  color: @color-dark-slate-blue;
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.companions-preview__hashtag {
+  width: 200px;
+  margin: auto;
+
+  text-align: center;
+}
+
+.companions-preview__transport-list {
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+
+  list-style: none;
+}
+
+.transport__item {
+  margin-right: 10px;
+}
+
 .companions__button {
+  position: relative;
+
   display: block;
   .button-index-page;
+
+  &:before {
+   .button-index-page-before;
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
