@@ -291,20 +291,25 @@
 
   <section class="offers">
     <h2 class="offers__title">Добавьте свой профиль</h2>
-    <img class="offers" src="https://via.placeholder.com/150x150" width="99" height="99" alt="">
     <ol class="offers__list">
-      <li class="offers__item">Базовое размещение
-        Бесплатно
+      <li class="offers__item">
+        <span>Базовое размещение</span>
+        <span>Бесплатно</span>
+        <span class="offers__item-number offers__item-number--mango-three">1</span>
       </li>
-      <li class="offers__item">Вывод на первых позициях
-        99 руб./мес
+      <li class="offers__item">
+        <span>Вывод на первых позициях</span>
+        <span>99 руб./мес</span>
+        <span class="offers__item-number offers__item-number--mango-two">2</span>
       </li>
-      <li class="offers__item">Кастомный цвет карточки
-        59 руб./мес
+      <li class="offers__item">
+        <span>Кастомный цвет карточки</span>
+        <span>59 руб./мес</span>
+        <span class="offers__item-number offers__item-number--light-gold">3</span>
       </li>
     </ol>
     <button class="offers__button" href="#">Показать тарифы для бизнеса</button>
-    <div class="offers__business-tariffs business-tariffs">
+    <div class="offers__business-tariffs business-tariffs visually-hidden">
       <h2 class="business-tariffs__title">Бизнес-тарифы</h2>
       <ul class="business-tariffs__list">
         <li class="business-tariffs__item">
@@ -349,20 +354,21 @@
         <span class="information__email-address">mail@htmlacademy.ru</span>
       </span>
     </div>
-    <div class="information__wrapper-map map">
-      <img class="map__image" src="https://via.placeholder.com/150x150" width="14" height="22" alt="">
-      <p class="map__address">ул. Большая Конюшенная, 19/8</p>
-      <button class="map__button">Проложить маршрут</button>
+    <div class="information__location-wrapper">
+      <img class="information__location-image" src="https://via.placeholder.com/150x150" width="14" height="22" alt="">
+      <p class="information__location">ул. Большая Конюшенная, 19/8</p>
+      <button class="information__location-button">Проложить маршрут</button>
+    </div>
+    <div class="information__map">
     </div>
   </section>
 
   <footer class="footer">
     <a class="footer__logo">
-      <img class="footer__logo-image" src="https://via.placeholder.com/150x150" width="100" height="19" alt="Поехали!">
+      <img class="footer__logo-image" src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Поехали!">
     </a>
-    <div class="footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
+      <ul class="footer__social-list">
+        <li class="footer__social-item">
           <a href="#">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="11" height="21" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 11 21"
                  style="enable-background:new 0 0 11 21;"
@@ -374,7 +380,7 @@
            </svg>
           </a>
         </li>
-        <li class="social__item">
+        <li class="footer__social-item">
           <a href="#">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="23" height="12" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  viewBox="0 0 30 15.8" style="enable-background:new 0 0 30 15.8;" xml:space="preserve">
@@ -399,7 +405,7 @@
             </svg>
           </a>
         </li>
-        <li class="social__item">
+        <li class="footer__social-item">
           <a href="#">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="18" height="18" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  viewBox="0 0 23 23" style="enable-background:new 0 0 23 23;" xml:space="preserve">
@@ -417,10 +423,9 @@
           </a>
         </li>
       </ul>
-    </div>
     <a class="footer__copyright copyright" href="#">
       <p class="copyright__text">Разработано</p>
-      <img class="copyright__image" src="https://via.placeholder.com/150x150" width="27" height="37" alt="Логотип htmlacademy">
+      <img class="copyright__image" src="img/htmlacademy.svg" width="27" height="37" alt="Логотип htmlacademy">
     </a>
   </footer>
 </main>

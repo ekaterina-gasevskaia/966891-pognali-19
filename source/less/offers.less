@@ -1,10 +1,83 @@
 .offers {
+  position: relative;
+  z-index: 3;
+
+  height: 430px;
+  margin-top: -15px;
+  padding-top: 70px;
+  padding-left: 50px;
+
   .border-radius-bottom-20px;
+  background-color: @color-pale-grey;
 }
 
-.offers__title,
-.business-tariffs__title {
+.offers__title {
   .title(@color-mango);
+  width: 130px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50px;
+    right: 25px;
+
+    width: 99px;
+    height: 99px;
+
+    background-image: url("../img/rates@1x.png");
+    background-position: center;
+    background-size: 99px;
+  }
+}
+
+.offers__list {
+  margin: 50px 0 35px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.offers__item {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 203px;
+  padding: 13px 0;
+
+  border-top: 1px solid rgba(95, 97, 104, 0.08);
+}
+
+.offers__item:last-child {
+  border-bottom: 1px solid rgba(95, 97, 104, 0.08);
+}
+
+.offers__item-number {
+  position: absolute;
+  top: 10px;
+  right: -40px;
+
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+
+  color: @color-white;
+  text-align: center;
+  line-height: 34px;
+
+  border-radius: 50%;
+}
+.offers__item-number--mango-three {
+  background-color: @color-mango-three;
+}
+
+.offers__item-number--mango-two {
+  background-color: @color-mango-two;
+}
+
+.offers__item-number--light-gold {
+  background-color: @color-light-gold;
 }
 
 .offers__button {
@@ -16,10 +89,116 @@
   cursor: pointer;
 }
 
+
+//popup
+.offers__business-tariffs {
+  position: absolute;
+  top: 40px;
+  left: 25px;
+  z-index: 10;
+
+  box-sizing: border-box;
+  width: 270px;
+  height: 443px;
+  padding-top: 33px;
+
+  background-color: @color-white;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.business-tariffs__title {
+  .title(@color-mango);
+  width: 190px;
+  margin: auto;
+}
+
+.business-tariffs__list {
+  margin: 0;
+  padding: 29px 0 33px 25px;
+
+  list-style: none;
+}
+
+.business-tariffs__item {
+  display: flex;
+  flex-direction: column;
+
+  width: 203px;
+  padding: 13px 0;
+
+  border-top: 1px solid rgba(95, 97, 104, 0.08);
+}
+
+.business-tariffs__item:last-child {
+  border-bottom: 1px solid rgba(95, 97, 104, 0.08);
+}
+
+
 .business-tariffs__button {
+  position: absolute;
+  bottom: 0;
+
+  width: 270px;
+  height: 59px;
+
   color: @color-dark-slate-blue;
 
-  border: none;
-
   background-color: @color-pale-grey-five;
+  border: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
